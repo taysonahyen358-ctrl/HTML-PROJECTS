@@ -1,0 +1,87 @@
+/* ===== SECTION A: colors changed only (dark teal theme) ===== */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #0f172a; color: #e2e8f0; font-size: 14px; }
+header { background: #020617; color: #fff; padding: 14px 20px; }
+.logo { font-size: 22px; font-weight: bold; }
+.menu a { color: #5eead4; text-decoration: none; font-size: 13px; font-weight: bold; display: block; }
+.layout { padding: 0; }
+main, aside { background: #1e293b; border: 1px solid #334155; padding: 16px; }
+h1 { font-size: 20px; margin: 0 0 8px; }
+h2 { font-size: 13px; margin: 16px 0 8px; color: #5eead4; }
+h3 { font-size: 13px; margin: 0 0 8px; color: #5eead4; }
+button { background: #14b8a6; color: #042f2e; border: 0; padding: 9px 20px; border-radius: 4px; font-size: 13px; font-weight: bold; }
+.card { background: #134e4a; border: 1px solid #2dd4bf; padding: 12px; width: 180px; }
+.card strong, .card span { display: block; }
+.card span { margin-top: 4px; color: #99f6e4; font-size: 13px; }
+.box-a, .box-b { height: 200px; background: #0f172a; border: 2px solid #5eead4; }
+.item { background: #f59e0b; color: #1c1917; font-weight: bold; padding: 10px 14px; font-size: 13px; }
+.status { background: #052e16; color: #4ade80; font-weight: bold; padding: 6px 10px; border-left: 4px solid #4ade80; }
+.update { background: #422006; border-left: 4px solid #f59e0b; padding: 10px 12px; }
+footer { background: #020617; color: #94a3b8; padding: 14px 20px; font-size: 13px; }
+/* ===== END SECTION A ===== */
+
+/* ===== SECTION B: YOUR WORK (edit only below this line) ===== */
+
+/* TASK 1: Site Header (selectors: header, .menu) */
+header {
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  gap: 24px;
+}
+
+/* TASK 2: Profile Sidebar + Main Content (selectors: .layout, main, aside) */
+.layout {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: flex-start;
+}
+main { width: 70%; }
+aside { width: 25%; }
+
+/* TASK 3: Project Filter Buttons (selector: .button-group) */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* TASK 4: Project Card Grid (selector: .cards) */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+}
+
+/* TASK 5: Highlights and Timeline Strips (selectors: .box-a, .box-b) */
+.box-a {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box-b {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* TASK 6: Recent Activity Feed (selector: .updates) */
+.updates {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+
+/* TASK 7: Footer (selector: footer) */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BONUS: Add exactly one declaration to the .layout rule */
